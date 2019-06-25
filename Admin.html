@@ -1,0 +1,316 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="css/bootstrap.min.css"  media="all" type="text/css">
+        <link rel="stylesheet" href="css/sb-admin-2.min.css">
+        <link rel="stylesheet" href="css/jquery.dataTables.min.css">
+         <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+         <link rel="stylesheet" href="css/dataTables.bootstrap4.min.css">
+         <link rel="stylesheet" href="css/fontawesome-free/css/all.min.css">
+         <link rel="stylesheet" href="css/custom.min.css">
+    </head>
+    <body>
+            <!-- Topbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light shadow px-3 py-2 bg-white rounded fixed-top ">
+                <a class="navbar-brand" href="#">Uni-Me Projects</a>
+                      
+                  <form class="form-inline my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+            </nav>
+          
+
+              <!-- Content -->
+            <div class="content-wrapper d-flex flex-row mt-6 mt-rem">
+                    
+                     <!-- Sidebar -->
+                    <ul class="navbar-nav bg-custom-2 sidebar sidebar-dark accordion position-fixed" id="accordionSidebar">
+
+                        <!-- Sidebar - Brand -->
+                        <a class="sidebar-brand d-flex align-items-center justify-content-center my-5" href="index.html">
+                          <div class="sidebar-brand-icon">
+                              <img src="img/Profile.svg" class="img-profile rounded-circle" alt="">
+                          </div>
+                        </a>
+                  
+                        <!-- Divider -->
+                        <hr class="sidebar-divider my-0">
+                  
+                        <!--Admin Details-->
+                        <li class="nav-item">
+                          <a class="nav-link" href="index.html">
+
+                            <span>Dashboard</span></a>
+                        </li>
+                  
+                        <!-- Divider -->
+                        <hr class="sidebar-divider">
+                  
+                        <!-- Heading -->
+                        <div class="sidebar-heading">
+                          Interface
+                        </div>
+                  
+                        <!-- Nav Item - Pages Collapse Menu -->
+                        <li class="nav-item ">
+                          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            <img src="img/Profile.png" alt="">
+                            <span>Create Account</span>
+                          </a>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                              <h6 class="collapse-header">Account options:</h6>
+                              <a class="collapse-item" href="buttons.html">Student</a>
+                              <a class="collapse-item" href="cards.html">Lecturer</a>
+                            </div>
+                          </div>
+                        </li>
+                  
+                  
+                        <!-- Nav Item - Tables -->
+                        <li class="nav-item active">
+                          <a class="nav-link" href="tables.html">
+                            <img src="img/Graph.png" alt="">
+                            <span>Grading</span></a>
+                        </li>
+                  
+                        <!-- Divider -->
+                        <hr class="sidebar-divider d-none d-md-block">
+                  
+                        <!-- Sidebar Toggler (Sidebar) -->
+                        <div class="text-center d-none d-md-inline">
+                          <button class="rounded-circle border-0" id="sidebarToggle"></button>
+                        </div>
+                  
+                      </ul>
+                      <!-- End of Sidebar -->  
+                    
+                    <!-- Dasboard content -->
+                    <div class="container flex col-md-10 pos" >
+
+                        <!-- Content Page Heading -->
+                        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                                <h1 class="h3 mb-3 text-gray-800">Dashboard</h1>
+                        </div>
+
+                        <div class="row pr-4">
+
+                            <!-- left table section -->
+                            <div class="col-md-10" id="table-part">
+                                <!-- header and description -->
+                                    <div class="mb-4">
+                                         <h6 class="m-0 h6"><b>Students' </b>Accounts</h6>
+                                         <p class="lead-custom">Lorem Ipsum and all that jazz and description below</p>
+                                    </div>
+                                
+                                    
+                                    
+                                    <!-- DataTable -->
+                                     <div class="card shadow mb-4">
+                                        <div class="card-header py-3">
+                                          <h6 class="m-0 font-weight-bold font-ctm">DataTables Example</h6>
+                                        </div>
+                                        <div class="card-body">
+                                          <div class="table-responsive">
+                                            <table class="table table-bordered" id="studentTable" width="100%" cellspacing="0">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Student's ID</th>
+                                                        <th>Email Address</th>
+                                                        <th>Department</th>
+                                                        <th>Age</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>Student's ID</th>
+                                                        <th>Email Address</th>
+                                                        <th>Department</th>
+                                                        <th>Age</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </tfoot>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>150806056</td>
+                                                        <td>johndoe32@example.com</td>
+                                                        <td>Computer Sciences</td>
+                                                        <td>61</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Tiger Nixon</td>
+                                                        <td>System Architect</td>
+                                                        <td>Edinburgh</td>
+                                                        <td>61</td>
+                                                        <td></td>
+
+                                                    </tr>
+                                                </tbody>
+
+                                            </table>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <!-- DataTable End -->
+
+                                    
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                      <button type="button" class="btn font-size-ctm btn-outline-secondary" data-toggle="collapse" data-target="#examinerCard">Assign Examiner</button>
+                                      <button type="button" class="btn font-size-ctm btn-outline-secondary">Preview Submission</button>
+                                      <button type="button" class="btn font-size-ctm btn-outline-secondary" onclick="addRow()">Check Grade</button>
+                                  </div>
+                                    
+                                    
+                    
+                            </div>
+                            <!-- right info section -->
+                            <div class="col-md-2 position-fixed offset-md-5 ">
+
+                                <!-- header and description -->
+                                <!-- <div class="mb-4 p-ctm">
+                                  <h6 class="m-0 h6"><b>Overview</b></h6>
+                                  <p class="lead-custom">Lorem Ipsum and all that jazz and description below</p>
+                                </div> -->
+
+                                <!-- Information Cards -->
+                                <!-- <div class="container bg-custom py-2 w-ctm"> -->
+                                  <!-- Bio card -->
+                                  <!-- <div class="card my-2 w-90 shadow-lg rounded">
+                                      <ul class="list-group list-group-flush">
+                                          <li class="list-group-item" >
+                                              <h6 class="m-0 h6"><b>Name</b></h6>
+                                              <p class="lead-custom m-0" id="name-detail" >John Doe Will</p>
+                                          </li>
+                                          <li class="list-group-item" >
+                                              <h6 class="m-0 h6"><b>ID</b></h6>
+                                              <p class="lead-custom m-0" id="id-detail" >John Doe Will</p>
+                                          </li>
+                                          <li class="list-group-item" >
+                                              <h6 class="m-0 h6"><b>Email</b></h6>
+                                              <p class="lead-custom m-0" id="email-detail" >John Doe Will</p>
+                                          </li>
+                                          <li class="list-group-item" >
+                                              <h6 class="m-0 h6"><b>Contact</b></h6>
+                                              <p class="lead-custom m-0" id="contact-detail" >John Doe Will</p>
+                                          </li>
+                                        </ul>  
+                                  </div> -->
+                                <!-- <div class="card my-2  w-90 shadow-lg rounded"> -->
+                                  <!-- Button card -->
+                                  <!-- <div class="card-body">
+                                      <div class="row justify-content-around ">
+                                          <button type="button" class="btn btn-outline-secondary col-md-3 d-flex flex-column btn-custom ">
+                                            <img src="img/Bust.png" alt="Bust.png" class="mx-auto icon-custom">Assign Examiner
+                                          </button>
+                                          <button type="button" class="btn btn-outline-secondary col-md-3 d-flex flex-column btn-custom justify-content-center">
+                                            <img src="img/Document.png" alt="Doc.png" class="mx-auto">Preview  Submission
+                                          </button>
+                                          <button type="button" class="btn btn-outline-secondary col-md-3 d-flex flex-column btn-custom"
+                                            ><img src="img/Analysis.png" alt="Grade.png" class="mx-auto">Check Grade
+                                          </button>
+                                      </div> -->
+                                  <!-- </div> -->
+                                <!-- </div> -->
+                                <!-- </div> -->
+                                <div class="card bg-light mb-3 collapse" style="max-width: 18rem;" id="examinerCard">
+                                  <div class="card-header">Examiners</div>
+                                  <div class="card-body list-group p-0">
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                      Cras justo odio
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+                                    <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+                                    <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Vestibulum at eros</a>
+                                  </div>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+
+                    </div>
+
+              </div>
+
+        <script src="js/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.dataTables.min.js"></script>
+        <script src="js/dataTables.bootstrap4.min.js"></script>
+
+        <script type="text/javascript">
+            function display(value){
+
+              var oTable = document.getElementById('student-table');
+              var rowIdx = value.rowIndex;
+              var cellOne = oTable.rows.item(rowIdx).cells.item(0).innerHTML;
+              var cellTwo = oTable.rows.item(rowIdx).cells.item(1).innerHTML;
+              var cellThree = oTable.rows.item(rowIdx).cells.item(2).innerHTML;
+              var cellFour = oTable.rows.item(rowIdx).cells.item(3).innerHTML;
+
+              oTable.rows.item(rowIdx).backgroun
+
+              document.getElementById('name-detail').innerHTML = cellOne;
+              document.getElementById('id-detail').innerHTML = cellTwo;
+              document.getElementById('email-detail').innerHTML = cellThree;
+              document.getElementById('contact-detail').innerHTML = cellFour;
+            }
+
+
+            $(document).ready(function() {
+              $('#studentTable').DataTable({
+                "columnDefs": [
+                  {
+                    "targets": -1,
+                     "data" : null,
+                    "defaultContent": "<div class=\"btn-group\" role=\"group\" aria-label=\"Basic example\"><button type=\"button\" class=\"btn font-size-ctm btn-outline-secondary\" data-toggle=\"collapse\" data-target=\"#examinerCard\">Assign Examiner</button><button type=\"button\"class=\"btn font-size-ctm btn-outline-secondary\">Preview Submission</button><button type=\"button\" class=\"btn font-size-ctm btn-outline-secondary\" onclick=\"createButtonGroup()\">Check Grade</button></div>"
+                  }
+              ]}
+              );
+                
+            } );
+            
+
+            function createButtonGroup(){
+              var div = document.createElement('div');
+              var btnLeft = document.createElement('button');
+              var btnCenter = document.createElement('button');
+              var btnRight = document.createElement('button');
+
+              div.setAttribute('class', 'btn-group');
+              div.setAttribute('role', 'group');
+              div.setAttribute('aria-label', 'Basic example');
+
+              btnLeft.setAttribute('class', 'font-size-ctm btn btn-outline-secondary');
+              btnLeft.innerHTML = "Assign Examiner"
+              btnCenter.setAttribute('class', 'font-size-ctm btn btn-outline-secondary');
+              btnCenter.innerHTML = "Preview Submission"
+              btnRight.setAttribute('class', 'font-size-ctm btn btn-outline-secondary');
+              btnRight.innerHTML = "Check Grade";
+
+              div.appendChild(btnLeft);
+              div.appendChild(btnCenter);
+              div.appendChild(btnRight);
+
+              document.querySelector('#table-part').appendChild(div);
+              
+            }
+
+            function addRow(){
+              var table = $('#studentTable').DataTable();
+ 
+                  table.row.add( [
+                          "John Dow",
+                          "tiger@john.com",
+                          "Physics",
+                          "34"
+                            ]).draw();
+            }
+        </script>
+    </body>
+</html>
